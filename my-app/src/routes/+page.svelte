@@ -1,59 +1,118 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+	let current = ''; // 現在の入力
+	let result = '';  // 計算結果
+  
+	// 数字や演算子を押したとき
+	function append(char) {
+	  current += char;
+	}
+  
+	// 計算する
+	function calculate() {
+	  try {
+		result = eval(current); // 安全性に気をつけて使用
+	  } catch (error) {
+		result = 'Error';
+	  }
+	}
+  
+	// クリア
+	function clearAll() {
+	  current = '';
+	  result = '';
 	}
 
-	h1 {
-		width: 100%;
+	let show = false;
+	function isEqual(){
+		show = !show;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	function delEqual(){
+		show = false;
+	}
+  </script>
+  
+  <style>
+	.calculator {
+	  width: 200px;
+	  margin: 0 auto;
+	}
+  
+	.display {
+	  width: 100%;
+	  height: 50px;
+	  margin-bottom: 10px;
+	  background-color: #f0f0f0;
+	  font-size: 24px;
+	  text-align: right;
+	  padding: 10px;
+	  box-sizing: border-box;
+	  border: 1px solid #ccc;
+	  display :flex;
+	}
+  
+	.buttons {
+	  display: grid;
+	  grid-template-columns: repeat(4, 1fr);
+	  grid-gap: 10px;
+	}
+  
+	button {
+	  width: 100%;
+	  height: 50px;
+	  font-size: 18px;
+	}
+  
+	button.clear {
+	  grid-column: span 2;
+	  background-color: #f44336;
+	  color: white;
+	}
+  
+	button.equals {
+	  grid-column: span 2;
+	  background-color: #4CAF50;
+	  color: white;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.transp{
+		opacity: 0;
 	}
-</style>
+  </style>
+  
+  <div class="calculator">
+	<!-- ディスプレイ部分 -->
+	<div class="display">
+	  <div>{current || 0}</div>
+	  {#if show}
+	  <div>=</div>
+	  {/if}
+	  <div>{result}</div>
+	</div>
+  
+	<!-- ボタン部分 -->
+	<div class="buttons">
+	  <button on:click={() => append('1')}>1</button>
+	  <button on:click={() => append('2')}>2</button>
+	  <button on:click={() => append('3')}>3</button>
+	  <button on:click={() => append('+')}>+</button>
+  
+	  <button on:click={() => append('4')}>4</button>
+	  <button on:click={() => append('5')}>5</button>
+	  <button on:click={() => append('6')}>6</button>
+	  <button on:click={() => append('-')}>-</button>
+  
+	  <button on:click={() => append('7')}>7</button>
+	  <button on:click={() => append('8')}>8</button>
+	  <button on:click={() => append('9')}>9</button>
+	  <button on:click={() => append('*')}>×</button>
+  
+	  <button on:click={() => {clearAll(); delEqual();} } class="clear">C</button>
+	  <button on:click={() => append('0')}>0</button>
+	  <button on:click={() => append('/')}>÷</button>
+	  <button on:click={() => { calculate(); isEqual(); }} class="equals">=</button>
+
+	</div>
+  </div>
+  
+

@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { spring } from 'svelte/motion';
 
 	let count = 0;
@@ -11,6 +11,8 @@
 		// handle negative numbers
 		return ((n % m) + m) % m;
 	}
+
+	export let name;
 </script>
 
 <div class="counter">
@@ -32,7 +34,15 @@
 			<path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" />
 		</svg>
 	</button>
+
+
+
+
 </div>
+
+<p> Hello,{name}</p>
+
+
 
 <style>
 	.counter {
@@ -99,4 +109,10 @@
 		top: -100%;
 		user-select: none;
 	}
-</style>
+</style> -->
+
+<script>
+	export let answer = 'a mystery';
+</script>
+
+<p>The answer is {answer}</p>
