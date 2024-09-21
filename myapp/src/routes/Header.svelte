@@ -1,10 +1,8 @@
-<!-- <script>
+<script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
 </script>
-
-
 
 <header>
 	<div class="corner">
@@ -128,48 +126,4 @@
 	a:hover {
 		color: var(--color-theme-1);
 	}
-</style> -->
-
-<!-- <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
-	<svelte:fragment slot="lead">(icon)</svelte:fragment>
-	(title)
-	<svelte:fragment slot="trail">(actions)</svelte:fragment>
-</AppBar> -->
-
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
-<title>Svelte App</title>
-</head>
-<style>
-.pop-text {
-  font-family: 'Poppins', sans-serif; /* Poppinsフォント */
-  font-weight: 700; /* 太字 */
-  font-size: 40px; /* サイズ */
-  color: #1057da; /* 色 */
-}
-
-.pop-text-2 {
-  font-family: 'Poppins', sans-serif; /* Poppinsフォント */
-  font-weight: 700; /* 太字 */
-  font-size: 25px; /* サイズ */
-  color: #130606; /* 色 */
-	
-}
-
-.aa{
-	text-align: right;
-	margin-right: 30%;
-
-}
-
-
 </style>
-<div>
-<h1 class="pop-text">日本地図どすえ</h1>
-
-<div class= "aa">
-	<a href="/" class="pop-text-2">ホーム画面</a>
-</div>
-</div>

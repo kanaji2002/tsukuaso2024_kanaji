@@ -1,5 +1,5 @@
 {
-	"name": "my-app",
+	"name": "myapp",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
@@ -34,8 +34,5 @@
 		"vite": "^5.0.3",
 		"vitest": "^2.0.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"svelte-spa-router": "^4.0.1"
-	}
+	"type": "module"
 }
