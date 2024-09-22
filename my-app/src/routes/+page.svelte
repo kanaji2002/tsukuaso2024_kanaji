@@ -180,7 +180,7 @@ justify-content: center;
 font-weight: 500;
 font-size: 25px;}
   </style>
-  <p class="h3dayo"> 47都道府県を案内します．興味のある<strong>地方</strong>を選んでください．</p>
+  <p class="h3dayo"> 47都道府県を案内します．まずは興味のある<strong>地方</strong>を選んでください．</p>
   <div class="image-container">
     <!-- 画像を表示 -->
     <!-- <img src="/path/to/your-image.jpg" alt="Sample Image" />
