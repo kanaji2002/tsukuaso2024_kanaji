@@ -168,7 +168,7 @@
 
 </style>
 <div>
-<h1 class="pop-text">日本地図どすえ</h1>
+<h1 class="pop-text">日本地図どす</h1>
 
 <div class= "aa">
 	<a href="/" class="pop-text-2">ホーム画面</a>

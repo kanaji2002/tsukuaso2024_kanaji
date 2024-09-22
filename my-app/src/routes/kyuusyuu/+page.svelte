@@ -56,7 +56,7 @@
       background: url('image/prefecture/hukuoka.svg');
       background-size: cover;
       width: 320px;
-      height: 470px;
+      height: 370px;
       color: white;
       border: none;
       font-size: 16px;
@@ -72,15 +72,15 @@
     .custom-button-kumamoto {
       background: url('image/prefecture/kumamoto.svg');
       background-size: cover;
-      width: 400px;
-      height: 490px;
+      width: 330px;
+      height: 450px;
       color: white;
       border: none;
       font-size: 16px;
       background: transparent;
       position: absolute;
       top: 48%; /* 画像の上からの位置 (全体の30%) */
-      left: 44%; /* 画像の左からの位置 (全体の40%) */
+      left: 50%; /* 画像の左からの位置 (全体の40%) */
       transform: translate(-50%, -50%); /* ボタンの中央を基準に調整 */
     }
 
@@ -88,30 +88,30 @@
     .custom-button-kagosima {
       background: url('image/prefecture/kagosima.svg');
       background-size: cover;
-      width: 240px;
+      width: 290px;
       height: 320px;
       color: white;
       border: none;
       font-size: 16px;
       background: transparent;
       position: absolute;
-      top: 62%; /* 画像の上からの位置 (全体の30%) */
-      left: 60%; /* 画像の左からの位置 (全体の40%) */
+      top: 75%; /* 画像の上からの位置 (全体の30%) */
+      left: 40%; /* 画像の左からの位置 (全体の40%) */
       transform: translate(-50%, -50%); /* ボタンの中央を基準に調整 */
     }
 
     .custom-button-saga {
       background: url('image/prefecture/saga.svg');
       background-size: cover;
-      width: 460px;
-      height: 520px;
+      width: 260px;
+      height: 220px;
       color: white;
       border: none;
       font-size: 16px;
       background: transparent;
       position: absolute;
-      top: 23%; /* 画像の上からの位置 (全体の30%) */
-      left: 20%; /* 画像の左からの位置 (全体の40%) */
+      top: 25%; /* 画像の上からの位置 (全体の30%) */
+      left: 31%; /* 画像の左からの位置 (全体の40%) */
       transform: translate(-50%, -50%); /* ボタンの中央を基準に調整 */
     }
 
@@ -125,8 +125,8 @@
       font-size: 16px;
       background: transparent;
       position: absolute;
-      top: 78%; /* 画像の上からの位置 (全体の30%) */
-      left: 47%; /* 画像の左からの位置 (全体の40%) */
+      top: 40%; /* 画像の上からの位置 (全体の30%) */
+      left: 11%; /* 画像の左からの位置 (全体の40%) */
       transform: translate(-50%, -50%); /* ボタンの中央を基準に調整 */
     }
 

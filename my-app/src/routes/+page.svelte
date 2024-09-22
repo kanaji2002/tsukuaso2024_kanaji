@@ -80,15 +80,15 @@
     .custom-button-tyuubu {
       background: url('image/tyuubu.svg');
       background-size: cover;
-      width: 220px;
+      width: 134px;
       height: 330px;
       color: white;
       border: none;
       font-size: 16px;
       background: transparent;
       position: absolute;
-      top: 62%; /* 画像の上からの位置 (全体の30%) */
-      left: 57%; /* 画像の左からの位置 (全体の40%) */
+      top: 63%; /* 画像の上からの位置 (全体の30%) */
+      left: 54%; /* 画像の左からの位置 (全体の40%) */
       transform: translate(-50%, -50%); /* ボタンの中央を基準に調整 */
     }
 
