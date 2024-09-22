@@ -1,4 +1,4 @@
-<h1> <strong>四国</strong></h1><!-- src/routes/index.svelte -->
+<h1> <strong>四国地方</strong></h1><!-- src/routes/index.svelte -->
 <!-- <a href="/shikoku">四国</a>
 <a href="/area/hokkaidou">北海道</a> -->
 

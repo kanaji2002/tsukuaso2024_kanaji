@@ -1,4 +1,4 @@
-<h1> <strong>九州</strong></h1>
+<h1> <strong>九州地地方</strong></h1>
 
 
 <!-- <a href="/shikoku">四国</a>
