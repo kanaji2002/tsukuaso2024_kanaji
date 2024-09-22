@@ -141,6 +141,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
 <title>Svelte App</title>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 </head>
 <style>
 .pop-text {
