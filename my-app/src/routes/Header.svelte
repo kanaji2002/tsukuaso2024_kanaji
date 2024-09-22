@@ -171,6 +171,6 @@
 <h1 class="pop-text">「外人さんや．これが日本どす～」</h1>
 
 <div class= "aa">
-	<a href="/" class="pop-text-2">ホーム画面</a>
+	<a href="/" class="pop-text-2">ホームはこちら</a>
 </div>
 </div>
