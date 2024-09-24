@@ -12,8 +12,8 @@
 
 
 
-    const baseLat = 			35.604560;
-    const baseLng = 		140.123145;
+    const baseLat = 			35.8617;
+    const baseLng = 		139.6455;
     // 地図を初期化する関数
     window.initMap = () => {
       const latlng = new google.maps.LatLng(baseLat, 	baseLng);
