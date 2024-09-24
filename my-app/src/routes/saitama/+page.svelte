@@ -12,8 +12,8 @@
 
 
 
-    const baseLat = 			35.85694;
-    const baseLng = 		139.64889;
+    const baseLat = 			35.604560;
+    const baseLng = 		140.123145;
     // 地図を初期化する関数
     window.initMap = () => {
       const latlng = new google.maps.LatLng(baseLat, 	baseLng);
@@ -97,13 +97,13 @@ document.getElementById("popup").style.display = 'none';
 
 </script>
 
-<h1>福井のおすすめスポット</h1>
+<h1>埼玉のおすすめスポット</h1>
 
 <div id="js-access-map" style="height: 700px; width: 100%;"></div>
 
 
 <div id="popup" class="popup">
-  <img src="/image/maiko/hukui.png" alt="ポップアップの画像">
+  <img src="/image/maiko/saitama.png" alt="ポップアップの画像">
   <h1><strong>京都においでやす．</strong></h1>
   <button class="close-button" on:click={closePopup}>閉じる</button>
 </div>
