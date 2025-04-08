@@ -9,12 +9,14 @@
 地方，都道府県と順に選択すると，各都道府県のおすすめポットが出てきます．
 
 ### 徳島県の場合
-![image](https://github.com/user-attachments/assets/f34bbf5f-3b2f-47c6-a5a3-9a42365589a2)
+![image](https://github.com/user-attachments/assets/e4379082-483d-4a2d-aea4-35b3d4e1e904)
+
 
 その数秒後，下記のポップアップが出現します．
-![image](https://github.com/user-attachments/assets/eb1af2ad-4e7d-48f2-a653-77da56da4dae)
+![image](https://github.com/user-attachments/assets/134fafc2-3b06-4530-b5b1-dd777c3c217d)  
 
 
+## その他の県
 ### 奈良県の場合
 
 ![image](https://github.com/user-attachments/assets/6adf4cac-1ae4-4176-a22f-bb4de0bdfe8c)
